@@ -1,4 +1,6 @@
-//converting into numbers------------------------>
+//<----------------------------conversions---------------------------->
+
+//converting into numbers-------------->
 
 let score = 33    //number
 let score1 = "33" //string
@@ -33,7 +35,7 @@ console.log(score5);            //print 1 for true, 0 for false
 // undefined -> NaN
 // true -> 1, false -> 0
 
-//converting into boolean------------------------>
+//converting into boolean-------------->
 
 let isLoggedIn = ""
 let booleanIsLoggedIn = Boolean(isLoggedIn)
@@ -44,8 +46,67 @@ console.log(booleanIsLoggedIn);            //print true
 // "" -> false
 // "abc" -> true
 
-//converting into string------------------------>
+//converting into string-------------->
 let someNumber = 33
 let stringNum = String(someNumber)
 console.log(typeof (stringNum));    //type=string
 console.log(stringNum);            //print 33
+
+//<----------------------------operations---------------------------->
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**3);
+console.log(2/3);
+console.log(2%3);
+
+let str1 = "Hello"
+let str2 = " World"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);      //12
+console.log(1 + "2");      //12
+console.log("1" + "2");    //12
+console.log("1" + 2 + 2);  //122
+console.log(1 + 2 + "2");  //32
+
+
+//bad practice to write such code-------------->
+
+console.log(3 + 4 * 5 % 3);      
+
+console.log(true);   //true
+console.log(+true);  //1
+//console.log(true+);  //error
+console.log(+"");    //0 
+
+let num1, num2, num3
+num1 = num2 = num3 = 2+2   //bad practice
+
+
+//Prefix and Postfix---------->
+// let gameCounter = 100
+// a = ++gameCounter;      //prefix
+// b = gameCounter++;      //postfix   
+// console.log(a);     //101
+// console.log(b);     //101
+
+//easy example
+let a = 3        //a=3
+b = a++;         //b -> value before increment //a=4, b=3 
+console.log("Post incr");
+console.log(`a:${a}, b:${b}`);
+
+let x = 3       //x=3
+y = ++x;        //c -> value after increment  //x=4, y=4
+console.log("Pre incr");
+console.log(`x:${x}, y:${y}`);
+
+//post incr -> first assign value, then incr value
+//pre incr -> first incr value, then assign value
