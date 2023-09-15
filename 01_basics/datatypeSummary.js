@@ -46,3 +46,29 @@ console.log(typeof myFunction); //object function
 //Boolean -> Boolean
 //Number -> Number
 //String -> String
+
+//<------------- Memory ------------->
+
+//Stack memory (Primitive) ---> take copy of the value and changes are done in the copy
+//Heap memory (Non-Primitive) --->take reference value and changes are done in the original value
+
+//example of stack
+let myName = "Dhrumi"
+let anotherName = myName //assigning value of myName to anotherName
+anotherName = "Dhru" //Changing value of anotherName
+console.log(myName); //Dhrumi
+console.log(anotherName); //Dhru
+
+
+//example of heap
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne //assigning value of userOne to userTwo
+
+userTwo.email = "dhrumi@google.com" //chaning value of email for userTwo
+
+console.log(userOne.email); //dhrumi@google.com
+console.log(userTwo.email); //dhrumi@google.com
